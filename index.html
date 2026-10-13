@@ -24,6 +24,7 @@ a:focus-visible{outline:2px solid var(--red);outline-offset:3px}
 .mast{padding:2.6rem 0 2.2rem;display:flex;align-items:baseline;gap:1rem}
 .brand{font-size:clamp(2.6rem,8vw,4.6rem);font-weight:300;line-height:1;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
 .mast span{color:var(--mid);font-style:italic}
+.mast nav{margin-left:auto}.mast nav a{color:var(--mid);text-decoration:none;font-size:1.05rem}.mast nav a:hover{color:var(--red)}
 .index{list-style:none;margin:2rem 0 4rem;padding:0;max-width:44rem}
 .index li{display:grid;grid-template-columns:9rem 1fr;gap:1.5rem;padding:1.4rem 0}
 .index time{color:var(--mid);font-size:.95rem;padding-top:.45rem}
@@ -64,7 +65,7 @@ footer.site{color:var(--mid);font-size:.9rem;margin-top:4rem;padding:1.4rem 0 2.
 </head>
 <body>
 <div class="wrap">
-<header class="mast"><a class="brand" href="#/">Vislumbres</a></header>
+<header class="mast"><a class="brand" href="#/">Vislumbres</a><nav><a href="#/about">About</a></nav></header>
 <main>
 <!-- HOME PAGE: one list item per post. For a new post, copy the item and point its links to #/post/your-slug -->
 <section id="home" class="view">
@@ -74,6 +75,11 @@ footer.site{color:var(--mid);font-size:.9rem;margin-top:4rem;padding:1.4rem 0 2.
       <div><h2><a href="#/post/raw-mathematics">Raw Mathematics</a></h2><p class="author">Manuel Rivera</p></div>
     </li>
   </ul>
+</section>
+<!-- ABOUT PAGE -->
+<section id="about" class="view post" hidden data-title="About">
+  <h1>About</h1>
+  <p><em>Vislumbres</em>, a Spanish word, means “glimpses,” “reflections of light,” and “faint glows,” but also “conjectures” and “speculations.” This is a communal blog of accessible expositions across many fields, with a special focus on ideas that rarely make it beyond academic circles. It is organized by Manuel Rivera, a mathematician at Purdue University, and includes contributions from authors with different backgrounds. To receive an email notification for every new post, send a message to <a href="mailto:x@y.com">x@y.com</a> to join the mailing list.</p>
 </section>
 <!-- POST: copy this whole block for a new post. Change the id (post-your-slug), data-title, date, title and text. -->
 <article id="post-raw-mathematics" class="view post" hidden data-title="Raw Mathematics">
@@ -131,7 +137,7 @@ footer.site{color:var(--mid);font-size:.9rem;margin-top:4rem;padding:1.4rem 0 2.
 <script>
 (function(){
   function route(){
-    var m=location.hash.match(/^#\/post\/([\w-]+)/),t=m&&document.getElementById('post-'+m[1])||document.getElementById('home');
+    var m=location.hash.match(/^#\/post\/([\w-]+)/),t=m&&document.getElementById('post-'+m[1])||(location.hash==='#/about'&&document.getElementById('about'))||document.getElementById('home');
     document.querySelectorAll('.view').forEach(function(v){v.hidden=v!==t});
     document.title=(t.dataset.title?t.dataset.title+' | ':'')+'Vislumbres';window.scrollTo(0,0);
   }
