@@ -1,5 +1,3 @@
 # Perspectiva Orquestal sobre la IA y la Hipótesis de Riemann
 
-This folder contains a standalone `index.html` for this entry only. It reuses the typography, stylesheet, Google Fonts links, masthead, and article markup from the Vislumbres website.
-
-Upload this folder to the root of the repository if you want it available at `/perspectiva-orquestal-ia-hipotesis-riemann/`.
+Standalone Vislumbres entry for Fernando Zalamea, dated 23 de noviembre de 2026. The article preserves the original italic and bold emphasis from `new-entry.docx` and uses the Vislumbres site's own stylesheet and font links.
