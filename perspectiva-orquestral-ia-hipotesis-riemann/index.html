@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Vislumbres</title>
+<meta content="Vislumbres" name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="Vislumbres" property="og:site_name"/>
+<meta content="Vislumbres" property="og:title"/>
+<meta content="https://vislumbres.github.io/" property="og:url"/>
+<meta content="https://vislumbres.github.io/push.png" property="og:image"/>
+<meta content="A woman pushing a blue cart painted with a red question mark, in front of a city skyline." property="og:image:alt"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="https://vislumbres.github.io/push.png" name="twitter:image"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='34' fill='%23d3261d'/%3E%3C/svg%3E" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--paper:#fbfaf7;--ink:#161616;--mid:#6b665e;--line:#d9d4c9;--red:#d3261d;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#141312;--ink:#ece8df;--mid:#a6a095;--line:#35322d;--red:#ff6f60}}
+:root[data-theme="dark"]{--paper:#141312;--ink:#ece8df;--mid:#a6a095;--line:#35322d;--red:#ff6f60}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.22rem/1.72 Newsreader,"Iowan Old Style",Georgia,serif;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
+a{color:var(--red);text-decoration-thickness:1px;text-underline-offset:.2em}
+a:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.wrap{max-width:74rem;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+/* masthead */
+.mast{display:flex;flex-direction:column;align-items:center;gap:1.1rem;padding:2.6rem 0 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 20%,var(--line))}
+.brand{font:400 clamp(1.9rem,7.5vw,3.5rem)/1 "Libre Caslon Display",Georgia,serif;letter-spacing:.16em;text-indent:.16em;text-transform:uppercase;color:var(--ink);text-decoration:none}
+.mast nav{padding-bottom:1.1rem}
+.mast nav a{font:600 .74rem/1 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.24em;text-indent:.24em;text-transform:uppercase;color:var(--ink);text-decoration:none}
+.mast nav a:hover{color:var(--red)}
+/* home */
+.index{list-style:none;margin:3.2rem auto 5rem;padding:0;text-align:center}
+.index li{display:flex;flex-direction:column;align-items:center;padding:1.5rem 0 3.5rem}
+.index li>div{max-width:46rem}
+.index time{font:600 .72rem/1 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-bottom:1rem}
+.index h2{font:400 clamp(1.7rem,4.5vw,2.5rem)/1.15 "Libre Caslon Display",Georgia,serif;text-wrap:balance;margin:0 0 .8rem}
+.index h2 a{color:var(--ink);text-decoration:none}.index h2 a:hover{color:var(--red)}
+.index .author{font-style:italic;font-weight:400;font-size:1.15rem;color:var(--mid);margin:0}
+.index .author a{text-decoration:none}
+.index p{margin:0;color:var(--mid)}
+/* essay */
+.post{max-width:44rem;margin:0 auto}
+.post .date{font:600 .72rem/1 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--red);text-align:center;margin:3rem 0 1.2rem}
+.post>h1:first-child{margin-top:3rem}
+.post h1{font:400 clamp(1.8rem,4.8vw,2.6rem)/1.15 "Libre Caslon Display",Georgia,serif;text-wrap:balance;text-align:center;letter-spacing:-.01em;margin:0 0 1.1rem}
+.post .byline{font:600 .78rem/1 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;text-align:center;margin:0 0 3rem}
+.post .byline a{text-decoration:none}
+.post .byline .au{display:block;line-height:1.5;margin-bottom:1rem}.post .byline .au:last-child{margin-bottom:0}
+.post .byline .aff{display:block;text-transform:none;letter-spacing:.03em;font-weight:400;font-size:.92rem;color:var(--mid);margin-top:.3rem}
+.post p{margin:0 0 1.3rem}
+.epigraph{margin:0 1.5rem 3rem}
+.epigraph p{font-style:italic;font-size:1.08rem;line-height:1.6;margin:0 0 .9rem}
+.epigraph footer{font:600 .72rem/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--mid)}
+.epigraph + p{font-size:1.55rem;line-height:1.38;margin:0 0 2rem}
+.quote{margin:2rem 0 2.2rem 2rem;font-size:1.08rem;line-height:1.65}
+.quote p{margin:0 0 .85rem}.quote p:last-child{margin:0}
+.red{color:var(--red)}
+.gallery{display:flex;gap:1rem;align-items:flex-start;width:min(100%,calc(var(--h) * var(--sum)));margin:2.6rem auto}
+.grp{margin:0;min-width:0}.imgs{display:flex;gap:.35rem;align-items:flex-start}
+.imgs img{width:100%;height:auto;min-width:0;display:block}
+figcaption{font:600 .7rem/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--mid);margin-top:.7rem}
+figcaption a{color:var(--ink);text-decoration-color:var(--red)}
+sup.fn{font-size:.66em;line-height:0;margin-left:.06em}
+.ref{text-decoration:none;font-weight:600}
+.sn{display:none}
+@media (min-width:80rem){
+ .sn{display:block;float:right;clear:right;width:14.5rem;margin:.3rem -17rem 1rem 0;font-size:.84rem;line-height:1.45;color:var(--mid);overflow-wrap:anywhere}
+ .sn b{color:var(--red);margin-right:.3rem}
+}
+.post h2{font:600 .74rem/1 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin:4rem 0 1.2rem}
+.refs{font-size:.95rem;line-height:1.55;color:var(--mid);padding-left:1.6rem}
+.refs li{margin:0 0 .65rem;padding-left:.3rem;overflow-wrap:anywhere}
+.refs li::marker{color:var(--red)}
+.refs li:target,.refs li.flash{background:color-mix(in srgb,var(--red) 14%,transparent)}
+footer.site{color:var(--mid);font-size:.9rem;margin-top:4rem;padding:1.4rem 0 2.5rem}
+@media (max-width:40rem){.mast{padding-top:1.8rem}.epigraph{margin-left:.5rem;margin-right:.5rem}.quote{margin-left:1rem}}
+</style>
+</head><body><div class="wrap"><header class="mast"><a class="brand" href="#/">Vislumbres</a><nav><a href="#/about">About</a></nav></header><main><article class="view post" data-title="Perspectiva Orquestal sobre la IA y la Hipótesis de Riemann" id="post-perspectiva-orquestal-ia-hipotesis-riemann" lang="es"><p class="date">23 de noviembre de 2026</p><h1>Perspectiva Orquestal sobre la IA y la Hipótesis de Riemann</h1><p class="byline" style="line-height:1.8"><a href="https://es.wikipedia.org/wiki/Fernando_Zalamea" rel="noopener" target="_blank">Fernando Zalamea</a><br/>Universidad Nacional de Colombia</p><p>De nuevo, a la velocidad del rayo, la IA nos ha dejado atónitos a los matemáticos. La prueba Alpöge-Claude de la Hipótesis de Riemann (HR) (20 Noviembre 2026) ha desafiado nuestra imaginación. Después de tan solo ocho semanas de trabajos (ver el reporte Alpöge), con un producto de 17 millones de líneas de código y un artículo estimado de 250.000 páginas (!), el matemático y la máquina han generado una prueba del problema abierto más importante de las matemáticas. Ningún colega fantasioso se hubiese atrevido a vaticinar semejante logro hace un mes (Tao, por ejemplo, un gran conocedor del tema, predecía hace un tiempo una eventual solución con IA en 50 años...) La situación ha superado todo lo concebible y las consecuencias serán gigantescas, no solo para las matemáticas, sino para el conocimiento en general. Al día siguiente, discutíamos en un evento conmemorativo del bicentenario de Riemann, la imposibilidad de leer semejante código y se dudaba de la eventual validez de la prueba. Sin embargo, dos días después (!), los expertos en Lean <em>certificaban</em> su corrección técnica y tres días después (!!) empezaban a aparecer resúmenes de los <em>conceptos</em> principales de la prueba (Zhang, Rubinstein, etc., utilizando IA para leer IA, ya que ningún humano podía hacerlo aún...) Estamos ante situaciones totalmente inéditas en la historia de la matemática, tanto que el Medallista Fields James Maynard la considera simplemente la prueba más importante de la historia.</p><p>Es sabida la frase de Hilbert, quien habría dicho que "si me despertara después de haber dormido mil años, mi primera pregunta sería ¿se ha probado la Hipótesis de Riemann?". Si el 22 de Noviembre de 2026, después de los chequeos exhaustivos Lean, se puede asegurar que la respuesta técnica es ya positiva, no sabemos aún muy bien si ese despertar tiene el carácter de un sueño hermoso, o de una pesadilla. La matemática, paladín de la creatividad humana, va a empezar a ser una creación mixta entre la inteligencia natural humana y la inteligencia artificial producida conjuntamente por humanos y torres de LLMs. El caso de la Hipótesis de Riemann ha sido un impresionante campo de experimentación en ese sentido. Diversas etapas muestran los avances incontrolables de la técnica: prueba de que 2/3 de los ceros no triviales estaban en la recta crítica (Agosto 2026, ClaudeIA), prueba de cuasi Riemann (Octubre 2026, OpenIA), prueba completa de la Hipótesis de Riemann (función Zeta) y de la Hipótesis Generalizada de Riemann (funciones L) (Noviembre 2026, ClaudeIA). Claude "voló, bailó y brilló" según Alpöge.</p><p>Las primeras digestiones de la prueba, inconcebible hace unas semanas, indican usos finos de acotaciones cohomológicas ligadas a técnicas muy disímiles de teoría algebraica de números, dentro de la filosofía general del Programa de Langlands. La inserción de mundos algebraicos avanzados ligados a la cohomología dentro de un problema inicial propio de la teoría analítica de números es una de las grandes sorpresas de la prueba Alpöge-Claude. Sabemos que la fuerza de la IA, por el momento (23 Noviembre 2026), consiste en acercar caminos enteramente alejados entre las matemáticas <em>existentes</em>. Es como imaginar mil orquestas en régimen cacofónico (Claude y sus agentes), guiadas por un hábil conductor (Alpöge), que producen millones de sonidos y progresivamente se van ajustando hacia una armonía inesperada, algo no muy lejano de la <em>Sinfonía del Universo</em> de Charles Ives. Pero otra cosa enteramente distinta sería llegar a esa armonía con plena sencillez y profundidad, como lo realizó el mismo Riemann en su momento, y, a partir de allí, inventar conceptos matemáticos <em>nuevos</em>. </p><p>En este caso, podemos calibrar la prueba Alpöge-Claude como un verdadero <em>tsunami</em>, que <em>arrasa</em> con las obstrucciones que impedían probar la Hipótesis de Riemann, pero a su vez deja entonces un panorama deforme, aplanado, donde no hay suficientes perspectivas para entender lo que está sucediendo. Contraria al tsunami, la <em>marea subiente</em> de Grothendieck habría buscado encontrar las <em>cimas</em> o <em>manantiales</em> adecuados para eliminar las obstrucciones, sin tener que recorrer artificialmente todos los caminos existentes que las redes neuronales logran transitar. Hubiese tratado de explorar un <em>relieve</em> fundamental para las matemáticas. Como ha señalado Alex Cruz en conversaciones que hemos tenido sobre este momento singular, se tiene una suerte de razón analógica:</p><blockquote class="quote"><p>(1) las conjeturas estándar (Grothendieck) son a (2) la prueba de las conjeturas de Weil (Deligne),</p><p>lo que (1) una prueba natural de HR  (por descubrirse) sería a (2) la prueba artificial HR (Alpöge-Claude).</p></blockquote><p>En la contraposición entre (1) y (2) –cercana a la contraposición entre la geometría algebraica a la Grothendieck y la geometría algebraica a la André Weil– está la noción de <em>naturalidad</em>, fundamental para Grothendieck y la Teoría de Categorías. La <em>pura fuerza</em>, propia de las aproximaciones tipo (2), contrasta con la <em>profunda suavidad</em> grothendieckiana. Los dos caminos son de gran interés, pero hay que tener mucho cuidado en este momento de que el éxito de las aproximaciones (2) no ofusquen un buen sentido de la balanza. En el fondo, (1) se acerca a entender <em>procesos</em> y (2) a resolver <em>problemas</em>. La matemática entendida como arsenal de técnicas para resolver problemas ha ya empezado a reevaluarse, y se abre el lugar para una reflexión que nos ayude a <em>pensar al revés</em> (Florenski, Gödel, Grothendieck, entre otros). Tentativamente, después del gran éxito de la "topología algebraica" (y sus derivaciones homológicas, a la Poincaré) en la prueba Alpöge-Claude, podría empezar a imaginarse una "álgebra topológica" (y sus derivaciones anabelianas, a la Grothendieck) que extraiga de Alpöge-Claude las <em>alturas</em> necesarias para escapar del tsunami, y que ayude a explicar las razones profundas del éxito de la prueba.</p></article></main></div></body></html>
